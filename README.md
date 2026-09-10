@@ -4,9 +4,9 @@ Research-first Windows scanner for finding and measuring price discrepancies bet
 
 ## Project status
 
-**Status:** architecture/documentation bootstrap.
+**Status:** Phase 0 architecture/documentation complete.
 
-**Current phase:** Phase 0 — repository authority, local Windows environment, source probes, and read-only data acquisition.
+**Next phase:** Phase 1 — local Windows/Codex tooling bootstrap, followed by bounded Polymarket and Fonbet source probes under architect-issued tasks.
 
 No automated betting is in scope. The first product is a read-only / paper-arbitrage scanner that records evidence about whether executable cross-platform opportunities actually exist, how long they survive, and at what size.
 
@@ -102,6 +102,8 @@ Order of authority:
 14. `docs/PROJECT_STATE.md`
 15. `docs/DECISION_LOG.md`
 16. `docs/REFERENCES.md`
+
+Coordination templates live under `docs/templates/`.
 
 If implementation conflicts with these documents, implementation is wrong unless the architect has first changed the relevant authority document.
 
