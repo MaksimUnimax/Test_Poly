@@ -19,7 +19,7 @@ OWNER = repository / workstation owner
 ## 2. Roadmap cursor
 
 ```text
-PHASE_0_AUTHORITY_AND_DOCUMENTATION = COMPLETE_PENDING_FINAL_REMOTE_READBACK
+PHASE_0_AUTHORITY_AND_DOCUMENTATION = COMPLETE
 PHASE_1_WINDOWS_BOOTSTRAP_AND_SOURCE_PROBES = NOT_STARTED
 PHASE_2_DOMAIN_AND_PERSISTENCE = NOT_STARTED
 PHASE_3_POLYMARKET_CONNECTOR = NOT_STARTED
@@ -164,6 +164,13 @@ These are intentionally unresolved until evidence exists:
 - whether live monitoring is viable after prematch research;
 - whether SQLite needs replacement after measured load.
 
-## 12. Final Phase 0 close condition
+## 12. Phase 0 closeout
 
-Phase 0 becomes simply `COMPLETE` after architect remote readback confirms all authority files listed by README exist on `main` with no missing documentation.
+```text
+PHASE_0_REMOTE_READBACK = PASS
+AUTHORITY_FILES_00_THROUGH_12 = PRESENT_ON_MAIN
+COORDINATION_TEMPLATES = PRESENT_ON_MAIN
+ROOT_AGENTS_README_GITIGNORE = PRESENT_ON_MAIN
+```
+
+Phase 0 is closed. The next engineering action is local Codex/Git onboarding followed by an architect-issued `TASK_001`; no backend code should be started before that task exists.
